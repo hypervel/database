@@ -1,0 +1,50 @@
+{
+    "name": "hypervel/database",
+    "type": "library",
+    "description": "The database package for Hypervel.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "database",
+        "eloquent",
+        "swoole",
+        "hypervel"
+    ],
+    "authors": [
+        {
+            "name": "Albert Chen",
+            "email": "albert@hypervel.org"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/hypervel/components/issues",
+        "source": "https://github.com/hypervel/components"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypervel\\Database\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "hyperf/database": "~3.1.0",
+        "hyperf/database-pgsql": "~3.1.0",
+        "hyperf/database-sqlite": "~3.1.0",
+        "hyperf/db-connection": "~3.1.0"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^2.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Hypervel\\Database\\ConfigProvider"
+        },
+        "branch-alias": {
+            "dev-main": "0.3-dev"
+        }
+    }
+}
